@@ -26,7 +26,7 @@ public enum ConsonneFinale {
     ᄐ(25,"t̚"),
     ᄑ(26,"p̚"),
     ᄒ(27,"t");
-    
+
     private final int code;
     private final String IPA;
 
