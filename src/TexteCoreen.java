@@ -6,11 +6,6 @@ public class TexteCoreen {
 
     protected String texte;
     protected ArrayList<Hangeul> ListeHangeul = new ArrayList<>();
-    protected Hangeul premier;
-    protected Hangeul prochain;
-    protected Hangeul precedant;
-    protected Hangeul present;
-    protected int size;
 
     public TexteCoreen(String texte) {
         try {
@@ -50,30 +45,26 @@ public class TexteCoreen {
     public String traduire() {
         String texteTraduit = "";
         ArrayList<Hangeul> texteAvantAjustement = new ArrayList<>();
-        ArrayList<Hangeul> texteApresAjustement;
 
         for (Hangeul hangeul : ListeHangeul) {
             Hangeul hangeulAvecCharactere = new Hangeul(hangeul);
             texteAvantAjustement.add(hangeulAvecCharactere);
-            System.out.println(hangeulAvecCharactere);
         }
 
-        texteApresAjustement = ajusterLiaisons(texteAvantAjustement);
-        for (Hangeul hangeul : texteApresAjustement){
+        texteAvantAjustement = ajusterLiaisons(texteAvantAjustement);
+        for (Hangeul hangeul : texteAvantAjustement){
             texteTraduit = texteTraduit + hangeul.getConsonneInitiale() + hangeul.getVoyelle() + hangeul.getConsonneFinale();
             System.out.println(texteTraduit);
         }
 
         return texteTraduit;
-
     }
 
 
     public ArrayList<Hangeul> ajusterLiaisons(ArrayList<Hangeul> texte){
-
         for (Hangeul hangeul : texte){
             if (hangeul.getConsonneFinale().equals("ᄀ")) {
-                if (texte.get(texte.indexOf(hangeul) + 1 ).getConsonneInitiale().equals( "ᄋ" )){
+                if (texte.get(texte.indexOf(hangeul)+1 ).getConsonneInitiale().equals( "ᄋ" )){
                     hangeul.setConsonneFinale("k");
                 } else if (texte.get(texte.indexOf(hangeul) + 1 ).getConsonneInitiale().equals("ᄒ")){
                     texte.get(texte.indexOf(hangeul)+1).setConsonneInitiale("");
