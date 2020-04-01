@@ -103,7 +103,7 @@ import static org.junit.jupiter.api.Assertions.*;
         @Test
         void noConsonneInitiale3() {
             TexteCoreen t = new TexteCoreen( H_1_1_0 + H_12_1_0 + H_1_1_0 );
-            assertEquals( 12, t.noConsonneInitiale( 1 ) );
+            assertEquals( 12, t.noConsonneInitiale( 1) );
         }
 
         @Test

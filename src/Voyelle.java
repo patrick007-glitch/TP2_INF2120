@@ -29,4 +29,12 @@ public enum Voyelle {
         this.code = code;
         this.IPA = IPA;
     }
+
+    public int getCode() {
+        return code;
+    }
+
+    public String getIPA() {
+        return IPA;
+    }
 }

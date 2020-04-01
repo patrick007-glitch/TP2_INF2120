@@ -1,4 +1,4 @@
-public enum consonneIni {
+public enum ConsonneInitiale {
 
     ᄀ(1, "k"),
     ᄁ(2,"k̤"),
@@ -11,7 +11,7 @@ public enum consonneIni {
     ᄈ(9,"p̤"),
     ᄉ(10,"s"),
     ᄊ(11,"s̤") ,
-    ᄋ(12, " "),
+    ᄋ(12, ""),
     ᄌ(13,"tɕ"),
     ᄍ(14, "t̤ɕ"),
     ᄎ(15,"tɕʰ"),
@@ -20,11 +20,23 @@ public enum consonneIni {
     ᄑ(18,"pʰ"),
     ᄒ(19,"h");
 
+
     private final int code;
     private final String IPA;
 
-    consonneIni(int code, String IPA) {
+    ConsonneInitiale(int code, String IPA) {
         this.code = code;
         this.IPA = IPA;
     }
-}
+
+    public int getCode() {
+        return code;
+    }
+
+    public String getIPA() {
+        return IPA;
+    }
+
+
+ }
+

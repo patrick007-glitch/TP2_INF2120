@@ -1,5 +1,6 @@
 public enum ConsonneFinale {
 
+    w (0, ""),
     ᄀ(1,"k̚"),
     ᄁ(2,"k̚"),
     ᆪ(3,"k"),
@@ -33,5 +34,13 @@ public enum ConsonneFinale {
     ConsonneFinale(int code, String IPA) {
         this.code = code;
         this.IPA = IPA;
+    }
+
+    public int getCode() {
+        return code;
+    }
+
+    public String getIPA() {
+        return IPA;
     }
 }
