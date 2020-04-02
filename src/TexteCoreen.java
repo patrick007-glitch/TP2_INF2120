@@ -35,18 +35,11 @@ public class TexteCoreen {
     public int noConsonneFinale(int position) {
         return ListeHangeul.get(position).getD();
     }
-    
+
     public String traduire() {
         StringBuilder texteTraduit = new StringBuilder();
-        ArrayList<Hangeul> texteAvantAjustement = new ArrayList<>();
-
-        for (Hangeul hangeul : ListeHangeul) {
-            Hangeul hangeulAvecCharactere = new Hangeul(hangeul);
-            texteAvantAjustement.add(hangeulAvecCharactere);
-        }
-        Liaisons.ajusterLiaisons(texteAvantAjustement);
-
-        for (Hangeul hangeul : texteAvantAjustement){
+        Liaisons.ajusterLiaisons(ListeHangeul);
+        for (Hangeul hangeul : ListeHangeul){
             texteTraduit.append(hangeul.getConsonneInitiale()).append(hangeul.getVoyelle()).append(hangeul.getConsonneFinale());
         }
         return texteTraduit.toString();
