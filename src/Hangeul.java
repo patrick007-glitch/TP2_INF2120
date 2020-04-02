@@ -25,6 +25,7 @@ public class Hangeul {
      * utiliser la methode codepointsat() sur un hangeul coreen pour passe la valeur en integer a l'exterieur de la
      * classe. Puis le constructeur se sert des valeurs numeriques pour trouver les correspondances en characteres de
      * l'alphabet phonetique internationale ainsi que des jamos en charactere coreen.
+     * 
      * @param u valeur numerique d'un hangeul coreen trouve avec la methode codepointsat().
      */
     public Hangeul(int u) {

@@ -5,7 +5,7 @@
  *               d = uPrime % 28;
  *               v = 1 + ( ( uPrime - d ) % 588 ) / 28;
  *               c = 1+ uPrime / 588;
- * C'est calcul sont implementes dans la classe Hangeul qui sont des Strings compose de trois jamos.
+ * C'est calculs sont implementer dans la classe Hangeul.
  */
 public class Conversion {
 
@@ -13,6 +13,7 @@ public class Conversion {
      * Trouve le charactere de l'alphabet phonetique international a partir d'un integer representant le code d'un
      * chararctere coreen(jamo).
      * Cette methode est utiliser pour trouver la consonne initiale d'un hangeul.
+     *
      * @param position un integer representant le code d'un jamo.
      * @return un String representant l'equivalant du jamo en charactere phonetique international.
      */
@@ -30,6 +31,7 @@ public class Conversion {
      * Trouve le charactere de l'alphabet phonetique international a partir d'un integer representant le code d'un
      * chararctere coreen(jamo).
      * Cette methode est utiliser pour trouver la consonne finale d'un hangeul.
+     *
      * @param position un integer representant le code d'un jamo.
      * @return un String representant l'equivalant du jamo en charactere phonetique international.
      */
@@ -47,6 +49,7 @@ public class Conversion {
      * Trouve le charactere de l'alphabet phonetique international a partir d'un integer representant le code d'un
      * chararctere coreen(jamo).
      * Cette methode est utilise pour trouver les voyelles.
+     *
      * @param position un integer representant le code d'un jamo.
      * @return un String representant l'equivalant du jamo en charactere phonetique international.
      */
@@ -63,6 +66,7 @@ public class Conversion {
     /**
      * Trouve le premier charactere coreen d'un hangeul a partir d'un integer representant le code du
      * jamo.
+     *
      * @param position un integer representant le code d'un jamo.
      * @return un String representant l'equivalant du jamo en charactere phonetique international.
      */
@@ -79,6 +83,7 @@ public class Conversion {
     /**
      * Trouve le charactere coreen finale d'un hangeul a partir d'un integer representant le code du
      * jamo.
+     *
      * @param position un integer representant le code d'un jamo.
      * @return un String representant l'equivalant du jamo en charactere phonetique international.
      */

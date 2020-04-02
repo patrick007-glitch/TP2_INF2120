@@ -11,6 +11,7 @@ public class TexteCoreen {
 
     /**
      * Construit un ArrayList contenant un hangeul par case avec un string de texte coreen passe en param.
+     *
      * @param texte un string non null de charactere coreen.
      */
     public TexteCoreen(String texte) {
@@ -34,6 +35,7 @@ public class TexteCoreen {
 
     /**
      * Trouve la valeur numerique de la consonne initiale d'un hangeul.
+     *
      * @param position l'indice du hangeul dont on veux trouve la consonne initiale.
      * @return la valeur de la consonne initiale du hangeul donne en param.
      */
@@ -43,6 +45,7 @@ public class TexteCoreen {
 
     /**
      *Trouve la valeur numerique de la voyelle d'un hangeul.
+     *
      *@param position l'indice du hangeul dont on veux trouve la consonne initiale.
      *@return la valeur de la voyelle du hangeul donne en param.
      */
@@ -52,6 +55,7 @@ public class TexteCoreen {
 
     /**
      * Trouve la valeur numerique de la consonne finale d'un hangeul.
+     *
      * @param position l'indice du hangeul dont on veux trouve la consonne initiale.
      * @return la valeur de la consonne finale du hangeul donne en param.
      */
@@ -62,6 +66,7 @@ public class TexteCoreen {
     /**
      * Prend la representation du texte en charactere coreen et le traduit en charactere de l'alphabet phonetique
      * internationale.
+     *
      * @return un string de charactere phonetique international traduit du texte coreen saisi par le constructeur.
      */
     public String traduire() {
