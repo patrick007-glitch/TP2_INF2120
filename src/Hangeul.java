@@ -3,9 +3,11 @@ public class Hangeul {
     private int d;
     private int v;
     private int c;
-    private String ConsonneInitiale;
-    private String Voyelle;
-    private String ConsonneFinale;
+    public String ConsonneInitiale;
+    public String Voyelle;
+    public String ConsonneFinale;
+    private String consoIniCoreen;
+    private String consoFinaleCoreen;
 
     public Hangeul(int u) {
         this.uPrime = u - 44032;
@@ -15,6 +17,8 @@ public class Hangeul {
     }
 
     public Hangeul( Hangeul hangeul ){
+        this.consoIniCoreen = Conversion.trouverCaracCoreenInitiale(hangeul.getC());
+        this.consoFinaleCoreen = Conversion.trouverCaracCoreenFinale(hangeul.getD());
         this.ConsonneInitiale = Conversion.trouverConsonneInitiale(hangeul.getC());
         this.Voyelle = Conversion.trouverVoyelle(hangeul.getV());
         this.ConsonneFinale = Conversion.trouverConsonneFinal(hangeul.getD());
@@ -32,10 +36,6 @@ public class Hangeul {
         return Voyelle;
     }
 
-    public void setVoyelle(String voyelle) {
-        Voyelle = voyelle;
-    }
-
     public String getConsonneFinale() {
         return ConsonneFinale;
     }
@@ -48,11 +48,9 @@ public class Hangeul {
         return d;
     }
 
-
     public int getV() {
         return v;
     }
-
 
     public int getC() {
         return c;
@@ -68,6 +66,14 @@ public class Hangeul {
 
     public void setC(int c) {
         this.c = c;
+    }
+
+    public String getConsoIniCoreen() {
+        return consoIniCoreen;
+    }
+
+    public String getConsoFinaleCoreen() {
+        return consoFinaleCoreen;
     }
 
     @Override

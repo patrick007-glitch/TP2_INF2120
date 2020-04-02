@@ -22,8 +22,8 @@ public enum Voyelle {
     ᅵ(21,"i");
 
 
-    private int code;
-    private String IPA;
+    private final int code;
+    private final String IPA;
 
     Voyelle( int code, String IPA){
         this.code = code;

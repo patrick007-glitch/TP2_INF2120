@@ -9,7 +9,8 @@ public enum ConsonneFinale {
     ᆭ(6,"nh"),
     ᄃ(7,"t̚"),
     ᄅ(8,"l"),
-    ᆰ(9,"k"),ᆱ(10,"m"),
+    ᆰ(9,"k"),
+    ᆱ(10,"m"),
     ᆲ(11,"p"),
     ᆳ(12,"s"),
     ᆴ(13,"tʰ"),
@@ -26,7 +27,7 @@ public enum ConsonneFinale {
     ᄏ(24,"k̚"),
     ᄐ(25,"t̚"),
     ᄑ(26,"p̚"),
-    ᄒ(27,"t");
+    ᄒ(27,"t̚");
 
     private final int code;
     private final String IPA;
