@@ -22,9 +22,9 @@ public class Hangeul {
      * et contien les valeurs en integer des codes representant chaque jamo. d est la consonne finale du jamo. c est la
      * consonne initale d'un jamo et v est la voyelle entre la consonne initiale et finale. Uprime sert seulement a
      * trouver les codes et u doit etre passer en param pour calculer les autres attributs. Pour trouver u il faut
-     * utiliser la methode codepointsat() sur un hangeul coreen. Puis le constructeur se sert des valeurs numeriques
-     * pour trouver les correspondances en characteres de l'alphabet phonetique internationale ainsi que des jamos eux
-     * memes en charactere coreen.
+     * utiliser la methode codepointsat() sur un hangeul coreen pour passe la valeur en integer a l'exterieur de la
+     * classe. Puis le constructeur se sert des valeurs numeriques pour trouver les correspondances en characteres de
+     * l'alphabet phonetique internationale ainsi que des jamos en charactere coreen.
      * @param u valeur numerique d'un hangeul coreen trouve avec la methode codepointsat().
      */
     public Hangeul(int u) {
