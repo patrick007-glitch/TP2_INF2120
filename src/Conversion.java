@@ -96,5 +96,25 @@ public class Conversion {
         }
         return resultat;
     }
+
+    public static boolean appliquerLiaisons( String consoIniConsoFin) {
+        boolean resultat = false;
+        for (CorrectionsLiaisons characCoreens : CorrectionsLiaisons.values()) {
+            if (consoIniConsoFin.equals(characCoreens.name())) {
+                resultat = true;
+            }
+        }
+        return resultat;
+    }
+
+    public static String trouverCorrections( String consoIniConsoFin) {
+        String resultat = "";
+        for (CorrectionsLiaisons characCoreens : CorrectionsLiaisons.values()) {
+            if (consoIniConsoFin.equals(characCoreens.name())) {
+                resultat = characCoreens.getCorrection();
+            }
+        }
+        return resultat;
+    }
 }
 

@@ -71,9 +71,9 @@ public class TexteCoreen {
      */
     public String traduire() {
         StringBuilder texteTraduit = new StringBuilder();
-        Liaisons.ajusterLiaisons(ListeHangeul);
+        Liaisons.ajusterLiaisons2(ListeHangeul);
         for (Hangeul hangeul : ListeHangeul){
-            texteTraduit.append(hangeul.getConsonneInitiale()).append(hangeul.getVoyelle()).append(hangeul.getConsonneFinale());
+            texteTraduit.append(hangeul.getConsoIniIPA()).append(hangeul.getVoyelleIPA()).append(hangeul.getConsoFinaleIPA());
         }
         return texteTraduit.toString();
     }

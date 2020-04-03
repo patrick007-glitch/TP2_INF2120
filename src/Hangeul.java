@@ -11,11 +11,12 @@ public class Hangeul {
     private int d;
     private int v;
     private int c;
-    public String ConsonneInitiale;
-    public String Voyelle;
-    public String ConsonneFinale;
+    public String consoIniIPA;
+    public String voyelleIPA;
+    public String consoFinaleIPA;
     private String consoIniCoreen;
     private String consoFinaleCoreen;
+    private String consoFinConsoIniCoreen;
 
     /**
      * Construit un hangeul a l'aide du hangeul coreen
@@ -25,7 +26,7 @@ public class Hangeul {
      * utiliser la methode codepointsat() sur un hangeul coreen pour passe la valeur en integer a l'exterieur de la
      * classe. Puis le constructeur se sert des valeurs numeriques pour trouver les correspondances en characteres de
      * l'alphabet phonetique internationale ainsi que des jamos en charactere coreen.
-     * 
+     *
      * @param u valeur numerique d'un hangeul coreen trouve avec la methode codepointsat().
      */
     public Hangeul(int u) {
@@ -35,29 +36,29 @@ public class Hangeul {
         this.c = 1+ uPrime / 588;
         this.consoIniCoreen = Conversion.trouverCaracCoreenInitiale(c);
         this.consoFinaleCoreen = Conversion.trouverCaracCoreenFinale(d);
-        this.ConsonneInitiale = Conversion.trouverConsonneInitiale(c);
-        this.Voyelle = Conversion.trouverVoyelle(v);
-        this.ConsonneFinale = Conversion.trouverConsonneFinal(d);
+        this.consoIniIPA = Conversion.trouverConsonneInitiale(c);
+        this.voyelleIPA = Conversion.trouverVoyelle(v);
+        this.consoFinaleIPA = Conversion.trouverConsonneFinal(d);
     }
 
-    public String getConsonneInitiale() {
-        return ConsonneInitiale;
+    public String getConsoIniIPA() {
+        return consoIniIPA;
     }
 
-    public void setConsonneInitiale(String consonneInitiale) {
-        ConsonneInitiale = consonneInitiale;
+    public void setConsoIniIPA(String consoIniIPA) {
+        this.consoIniIPA = consoIniIPA;
     }
 
-    public String getVoyelle() {
-        return Voyelle;
+    public String getVoyelleIPA() {
+        return voyelleIPA;
     }
 
-    public String getConsonneFinale() {
-        return ConsonneFinale;
+    public String getConsoFinaleIPA() {
+        return consoFinaleIPA;
     }
 
-    public void setConsonneFinale(String consonneFinale) {
-        ConsonneFinale = consonneFinale;
+    public void setConsoFinaleIPA(String consoFinaleIPA) {
+        this.consoFinaleIPA = consoFinaleIPA;
     }
 
     public int getD() {
@@ -82,8 +83,8 @@ public class Hangeul {
 
     @Override
     public String toString() {
-        return ConsonneInitiale
-                + Voyelle + ConsonneFinale;
+        return consoIniIPA
+                + voyelleIPA + consoFinaleIPA;
     }
 }
 
