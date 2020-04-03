@@ -1,5 +1,12 @@
 import java.util.ArrayList;
 
+/*
+ * Auteur: Jean-Michel Landry, Patrick Chalifour
+ * Code Permanent: LANJ09049206, CHAP03089503
+ * courriels: kj191048@ens.uqam.ca, dj991063@ens.uqam.ca
+ * Date de mise a jour : 3 avril 2020
+ */
+
 /**
  * Classe qui modelise un texte en charactere coreen. Elle cotiens egalement une methode pour traduire le coreen en
  * alphabet phonetique internationale.
