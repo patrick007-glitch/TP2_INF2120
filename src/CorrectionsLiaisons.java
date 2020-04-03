@@ -1,5 +1,5 @@
 public enum CorrectionsLiaisons {
-    ᄀᄋ ("k"),
+    ᄀᄋ("k"),
     ᄁᄋ("kh"),
     ᄂᄋ("n"),
     ᄃᄋ("t̚"),
@@ -52,9 +52,6 @@ public enum CorrectionsLiaisons {
     ᄐᄋ("t̚tɕʰ"),
     ᄑᄋ("p̚h"),
     ᄒᄋ("h"),
-
-
-
     ᄉᄒ("t̚"),
     ᄋᄒ("ŋh"),
     ᄌᄒ("t̚tɕʰ"),
@@ -62,9 +59,6 @@ public enum CorrectionsLiaisons {
     ᄏᄒ("k̚"),
     ᄐᄒ("t̚"),
     ᄑᄒ("p̚"),
-
-
-
     ᄉᄀ("t̚k"),
     ᄋᄀ("ŋk"),
     ᄌᄀ("t̚k"),
@@ -72,8 +66,6 @@ public enum CorrectionsLiaisons {
     ᄐᄀ("t̚k"),
     ᄑᄀ("p̚k"),
     ᄒᄀ("hk̚"),
-
-
     ᄉᄂ("t̚n"),
     ᄊᄂ("nt̚"),
     ᄋᄂ("ŋn"),
@@ -82,9 +74,6 @@ public enum CorrectionsLiaisons {
     ᄐᄂ("t̚n"),
     ᄑᄂ("p̚n"),
     ᄒᄂ("hn"),
-
-
-
     ᄉᄃ("t̚t̚"),
     ᄊᄃ("t̚t̚"),
     ᄋᄃ("ŋt"),
@@ -94,14 +83,8 @@ public enum CorrectionsLiaisons {
     ᄐᄃ("t̚t̚"),
     ᄑᄃ("p̚t"),
     ᄒᄃ("ht̚"),
-
-
-
     ᄋᄅ("n"),
     ᄒᄅ("r"),
-
-
-
     ᄉᄆ("t̚m"),
     ᄋᄆ("ŋm"),
     ᄌᄆ("t̚m"),
@@ -110,21 +93,10 @@ public enum CorrectionsLiaisons {
     ᄐᄆ("t̚m"),
     ᄑᄆ("p̚m"),
     ᄒᄆ("hm"),
-
-
-
     ᄉᄇ("t̚p"),
-
-
-
     ᄊᄉ("s̤s"),
     ᄍᄉ("t̚tɕʰ"),
-
-
     ᄊᄌ("t̚tɕʰ"),
-
-
-
     ᆪᄋ("ks"),
     ᆬᄋ("ntɕ"),
     ᆭᄋ("lh"),
@@ -136,8 +108,6 @@ public enum CorrectionsLiaisons {
     ᆵᄋ("lpʰ"),
     ᄚᄋ("lh"),
     ᄡᄋ("p̚s"),
-
-
     ᆪᄃ("kt̚"),
     ᆬᄃ("ntɕt"),
     ᆭᄃ("nt̚"),
@@ -153,7 +123,7 @@ public enum CorrectionsLiaisons {
 
     private final String correction;
 
-    CorrectionsLiaisons(String correction){
+    CorrectionsLiaisons(String correction) {
         this.correction = correction;
     }
 

@@ -32,8 +32,8 @@ public class Hangeul {
     public Hangeul(int u) {
         this.uPrime = u - 44032;
         this.d = this.uPrime % 28;
-        this.v = 1 + ( ( uPrime - d ) % 588 ) / 28;
-        this.c = 1+ uPrime / 588;
+        this.v = 1 + ((uPrime - d) % 588) / 28;
+        this.c = 1 + uPrime / 588;
         this.consoIniCoreen = Conversion.trouverCaracCoreenInitiale(c);
         this.consoFinaleCoreen = Conversion.trouverCaracCoreenFinale(d);
         this.consoIniIPA = Conversion.trouverConsonneInitiale(c);

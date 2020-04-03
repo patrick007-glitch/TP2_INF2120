@@ -44,10 +44,10 @@ public class TexteCoreen {
     }
 
     /**
-     *Trouve la valeur numerique de la voyelle d'un hangeul.
+     * Trouve la valeur numerique de la voyelle d'un hangeul.
      *
-     *@param position l'indice du hangeul dont on veux trouve la consonne initiale.
-     *@return la valeur de la voyelle du hangeul donne en param.
+     * @param position l'indice du hangeul dont on veux trouve la consonne initiale.
+     * @return la valeur de la voyelle du hangeul donne en param.
      */
     public int noVoyelle(int position) {
         return ListeHangeul.get(position).getV();
@@ -71,8 +71,8 @@ public class TexteCoreen {
      */
     public String traduire() {
         StringBuilder texteTraduit = new StringBuilder();
-        Liaisons.ajusterLiaisons2(ListeHangeul);
-        for (Hangeul hangeul : ListeHangeul){
+        Liaisons.ajusterLiaisons(ListeHangeul);
+        for (Hangeul hangeul : ListeHangeul) {
             texteTraduit.append(hangeul.getConsoIniIPA()).append(hangeul.getVoyelleIPA()).append(hangeul.getConsoFinaleIPA());
         }
         return texteTraduit.toString();

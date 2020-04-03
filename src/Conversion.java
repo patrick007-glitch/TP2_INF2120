@@ -2,9 +2,9 @@
  * Classe qui contiens les methodes servant a acceder au valeurs dans les enumerations Voyelle, ConsonneInitiale et
  * ConsonneFinale. Elle se sert de code representant les jamos(charactere coreens) qui doivent etre trouve a l'aide de
  * calcul soit : uPrime = u - 44032;
- *               d = uPrime % 28;
- *               v = 1 + ( ( uPrime - d ) % 588 ) / 28;
- *               c = 1+ uPrime / 588;
+ * d = uPrime % 28;
+ * v = 1 + ( ( uPrime - d ) % 588 ) / 28;
+ * c = 1+ uPrime / 588;
  * C'est calculs sont implementer dans la classe Hangeul.
  */
 public class Conversion {
@@ -17,10 +17,10 @@ public class Conversion {
      * @param position un integer representant le code d'un jamo.
      * @return un String representant l'equivalant du jamo en charactere phonetique international.
      */
-    public static String trouverConsonneInitiale( int position ){
+    public static String trouverConsonneInitiale(int position) {
         String resultat = null;
         for (ConsonneInitiale consonne : ConsonneInitiale.values()) {
-            if (position == consonne.getCode()){
+            if (position == consonne.getCode()) {
                 resultat = consonne.getIPA();
             }
         }
@@ -35,10 +35,10 @@ public class Conversion {
      * @param position un integer representant le code d'un jamo.
      * @return un String representant l'equivalant du jamo en charactere phonetique international.
      */
-    public static String trouverConsonneFinal( int position ){
+    public static String trouverConsonneFinal(int position) {
         String resultat = null;
         for (ConsonneFinale consonne : ConsonneFinale.values()) {
-            if (position == consonne.getCode()){
+            if (position == consonne.getCode()) {
                 resultat = consonne.getIPA();
             }
         }
@@ -53,10 +53,10 @@ public class Conversion {
      * @param position un integer representant le code d'un jamo.
      * @return un String representant l'equivalant du jamo en charactere phonetique international.
      */
-    public static String trouverVoyelle( int position ){
+    public static String trouverVoyelle(int position) {
         String resultat = "";
         for (Voyelle voyelle : Voyelle.values()) {
-            if (position == voyelle.getCode()){
+            if (position == voyelle.getCode()) {
                 resultat = voyelle.getIPA();
             }
         }
@@ -70,10 +70,10 @@ public class Conversion {
      * @param position un integer representant le code d'un jamo.
      * @return un String representant l'equivalant du jamo en charactere phonetique international.
      */
-    public static String trouverCaracCoreenInitiale( int position){
+    public static String trouverCaracCoreenInitiale(int position) {
         String resultat = "";
         for (ConsonneInitiale consonne : ConsonneInitiale.values()) {
-            if (position == consonne.getCode()){
+            if (position == consonne.getCode()) {
                 resultat = consonne.name();
             }
         }
@@ -87,17 +87,17 @@ public class Conversion {
      * @param position un integer representant le code d'un jamo.
      * @return un String representant l'equivalant du jamo en charactere phonetique international.
      */
-    public static String trouverCaracCoreenFinale( int position){
+    public static String trouverCaracCoreenFinale(int position) {
         String resultat = "";
         for (ConsonneFinale consonne : ConsonneFinale.values()) {
-            if (position == consonne.getCode()){
+            if (position == consonne.getCode()) {
                 resultat = consonne.name();
             }
         }
         return resultat;
     }
 
-    public static boolean appliquerLiaisons( String consoIniConsoFin) {
+    public static boolean appliquerLiaisons(String consoIniConsoFin) {
         boolean resultat = false;
         for (CorrectionsLiaisons characCoreens : CorrectionsLiaisons.values()) {
             if (consoIniConsoFin.equals(characCoreens.name())) {
@@ -107,7 +107,7 @@ public class Conversion {
         return resultat;
     }
 
-    public static String trouverCorrections( String consoIniConsoFin) {
+    public static String trouverCorrections(String consoIniConsoFin) {
         String resultat = "";
         for (CorrectionsLiaisons characCoreens : CorrectionsLiaisons.values()) {
             if (consoIniConsoFin.equals(characCoreens.name())) {
